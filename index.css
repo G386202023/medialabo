@@ -1,3 +1,15 @@
 h1 {
-    color: aqua;
+    color: rgb(53, 113, 193);
+}
+
+div#jugyou {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 300px 300px; 
+	grid-gap: 5px;
+	width: 1500px;
+}
+
+div#jugyou > div {
+	background-color: #ffefaf;
 }
