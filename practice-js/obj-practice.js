@@ -15,4 +15,12 @@ let gakka = [
 ];
 
 //////////////// ここから下にプログラムを書きたそう!
-
+console.log(campus.address);
+let ns = ["D101", "D102", "D103", "D201", "D202", "D203", "D204", "D205"];
+for (let n of ns) {
+    console.log(n);
+}
+let us =['機械システム工学科','電子システム工学科','情報工学科','デザイン学科'];
+for (let a of us) {
+    console.log(a);
+}
