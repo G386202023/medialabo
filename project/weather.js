@@ -1,7 +1,29 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
-console.log(data);
+console.log(data.coord.lon);
+console.log(data.coord.lat);
+console.log(data.weather.description);
+console.log(data.main.temp_min);
+console.log(data.main.temp_max);
+console.log(data.main.humidity);
+console.log(data.wind.speed);
+console.log(data.wind.deg);
+console.log(data.name);
+}
+
+
+  let b = document.querySelector('button#btn');
+b.addEventListener('click', basyo);
+
+function basyo() {
+  let s = document.querySelector('select#kennsaku');
+  let idx = s.selectedIndex;  // idx 番目の option が選択された
+
+  let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
+  let o = os.item(idx);       // os の idx 番目の要素
+
+  console.log(o.textContent);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
@@ -48,14 +70,14 @@ let data = {
     "lon": 116.3972,
     "lat": 39.9075
   },
-  "weather": [
+  "weather": 
     {
       "id": 803,
       "main": "Clouds",
       "description": "曇りがち",
       "icon": "04d"
     }
-  ],
+  ,
   "base": "stations",
   "main": {
     "temp": 9.94,

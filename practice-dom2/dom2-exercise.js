@@ -28,6 +28,6 @@ u = document.createElement('ul');
 p.insertAdjacentElement('afterend',u); 
 l = document.createElement('li'); 
 u.insertAdjacentElement('beforeend',l); 
-l.textContent = gakka.name; 
+l.textContent = n; 
 console.log(n);
 }
