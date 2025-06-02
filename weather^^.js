@@ -45,7 +45,7 @@ let data = {
   "cod": 200
 };
 
-// 課題3-2 のプログラムはこの関数の中に記述すること
+////////// 課題3-2 ここからプログラムを書こう
 
 console.log("緯度: " + data.coord.lat);
 console.log("経度: " + data.coord.lon);
