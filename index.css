@@ -1,5 +1,11 @@
 h1 {
     color: rgb(53, 113, 193);
+	text-shadow: 2px 2px 8px rgb(212, 212, 243);
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+	background: linear-gradient(to right,rgb(82, 181, 227),#154c7c);
 }
 
 div#jugyou {
@@ -11,5 +17,5 @@ div#jugyou {
 }
 
 div#jugyou > div {
-	background-color: #ffefaf;
+	background-color: #90beec;
 }
