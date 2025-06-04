@@ -57,16 +57,16 @@ console.log("風速: " + data.wind.speed + " m/s");
 console.log("風向: " + data.wind.deg);
 console.log("都市名: " + data.name);
 
-let a1 = document.querySelector('button#sendRequest');
-    a1.addEventListener('click',sendRequest);
+let b1 = document.querySelector('button#sendRequest');
+    b1.addEventListener('click',sendRequest);
 
 function sendRequest(){
-    let b1 = document.querySelector('select#toshi');
-    let b2 = b1.selectedIndex;
-    let b3 = b1.querySelectorAll('option');
-    let b4 = b3.item(b2);
-    let key = b4.value;
-    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/"+key+".json";
+    let a = document.querySelector('select#toshi');
+    let b = a.selectedIndex;
+    let c = a.querySelectorAll('option');
+    let d = c.item(b);
+    let k = d.value;
+    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/"+k+".json";
     console.log(url);
 
 
@@ -83,23 +83,23 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let data1 = document.querySelector("span#x1");
+    let data1 = document.querySelector("span#v1");
     data1.textContent = data.name;
-    let data2 = document.querySelector("span#x2");
+    let data2 = document.querySelector("span#v2");
     data2.textContent = data.coord.lat;
-    let data3 = document.querySelector("span#x3");
+    let data3 = document.querySelector("span#v3");
     data3.textContent = data.coord.lon;
-    let data4 = document.querySelector("span#x4");
+    let data4 = document.querySelector("span#v4");
     data4.textContent = data.weather[0].description;
-    let data5 = document.querySelector("span#x5");
+    let data5 = document.querySelector("span#v5");
     data5.textContent = data.main.temp_min+"度";
-    let data6 = document.querySelector("span#x6");
+    let data6 = document.querySelector("span#v6");
     data6.textContent = data.main.temp_max+"度";
-    let data7 = document.querySelector("span#x7");
+    let data7 = document.querySelector("span#v7");
     data7.textContent = data.main.humidity+"%";
-    let data8 = document.querySelector("span#x8");
+    let data8 = document.querySelector("span#v8");
     data8.textContent = data.wind.speed+"m/s";
-    let data9 = document.querySelector("span#x9");
+    let data9 = document.querySelector("span#v9");
     data9.textContent = data.wind.deg;
 
 }
